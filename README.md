@@ -9,10 +9,10 @@ Info and the Arduino Library for LineTracker5
     
   - Software
     ```
-    #include <LineTracker.h>
+    #include <LineTracker5.h>
 
     //LineTracker tracker(IR1, IR2, IR3, IR4, IR5, SIG, NOISE_REDUCTION[true||false]);
-    LineTracker tracker(5, 6, 7, 8, 9, 10, true);
+    LineTracker tracker(A1, A2, A3, A4, A5, 10, true);
 
     int calib = 1000; //The calibration point, can be discovered using the Calibration sketch in the examples
 
