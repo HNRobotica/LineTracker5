@@ -5,7 +5,7 @@
 */
 
 #include "Arduino.h"
-#include "LineTracker.h"
+#include "LineTracker5.h"
 
 LineTracker::LineTracker(int ir1, int ir2, int ir3, int ir4, int ir5, int sig, bool noise)
 {
