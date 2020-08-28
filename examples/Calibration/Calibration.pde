@@ -1,4 +1,4 @@
-#include <LineTracker.h>
+#include <LineTracker5.h>
 
 //LineTracker tracker(IR1, IR2, IR3, IR4, IR5, SIG, NOISE_RED[true||false]);
 LineTracker tracker(A1, A2, A3, A4, A5, 10, true);
