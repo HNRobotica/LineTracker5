@@ -10,13 +10,13 @@ void setup() {
   Serial.begin(9600);
   tracker.begin();
 
-  Serial.println("Ponha todos os sensores na primeira cor e envie '0' no Serial");
+  Serial.println("Put all the sensors on the first color and send '0' in the Serial console");
 }
 
 void loop() {
   if(stage >= 2){
     int vals = value[0] + value[1];
-    Serial.println("O valor da calibração é " + vals/2);
+    Serial.println("The calibration value is " + vals/2);
     noInterrupts();
     while(true){}
   }
@@ -25,7 +25,7 @@ void loop() {
     int vals = tracker.read(1) + tracker.read(2) + tracker.read(3) + tracker.read(4) + tracker.read(5);
     value[stage] = vals / 5;
     if(stage == 1){
-      Serial.println("Ponha todos os sensores na segunda cor e envie '0' no Serial");
+      Serial.println("Put all the sensors on the second color and send '0' in the Serial console");
     }
     while(Serial.available() > 0) {
       Serial.read();
