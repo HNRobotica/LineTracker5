@@ -26,3 +26,6 @@ Info and the Arduino Library for LineTracker5
       delay(1000);
     }
     ```
+
+  - Errors
+      - If an operation is unsuccessful, it will return a `-1` value
