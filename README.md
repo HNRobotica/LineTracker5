@@ -8,7 +8,7 @@ Info and the Arduino Library for LineTracker5
     - Connect GND to Ground
     
   - Software
-    ```
+    ```cpp
     #include <LineTracker5.h>
 
     //LineTracker tracker(IR1, IR2, IR3, IR4, IR5, SIG, NOISE_REDUCTION[true||false]);
